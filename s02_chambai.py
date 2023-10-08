@@ -1,14 +1,10 @@
-def chambai():
-  INP_name = 'AI BTX'
-  
-  from s01_dapan import hi
-  r_DAPAN = hi()  # aka result_of_DAPAN
+def chambai(testcase, dapan_f, bailam_f):
+  r_DAPAN = dapan_f(**testcase['input'])
 
   try:
-    from s00_bailam import hi
-    r_THISINH = hi()  # aka result_of_THISINH
+    r_THISINH = bailam_f(**testcase['input'])
   except:
     r_THISINH = None
 
-  chambai_r = int(r_THISINH == r_DAPAN)
-  return chambai_r
+  score01 = int(r_THISINH == r_DAPAN)
+  return score01
