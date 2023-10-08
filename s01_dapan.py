@@ -1,14 +1,17 @@
 """
 --- debai 
-Viet python ham hi()
-Tra ve cau chao 'Hi'
+Viet ham 
+def hi(name):
+  # tra ve cau chao 'Hi {name}!'
 
---- input 
-(ko co)
-
---- output 
-Hi!
+--- vidu
+Khi chay voi input | Ketqua output
+------------------ | ------------
+hi('AI-BTX')       | Hi AI-BTX!
+hi('HSU')          | Hi HSU!
+hi(None)           | Hi!
+hi('')             | Hi!
 """
 
-def hi():
-  return 'Hi'
+def hi(name):
+  return f'Hi {name}' if name else 'Hi'
