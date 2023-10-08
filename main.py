@@ -13,8 +13,9 @@ from s02_chambai import chambai
 
 testkey_list = [
     {'tc_name': 'tc0', 'input': {'name':'AI BTX'}, 'output':'Hi AI BTX'},  
-    {'tc_name': 'tc1', 'input': {'name':None},     'output':'Hi'},    
-    {'tc_name': 'tc2', 'input': {'name':''},       'output':'Hi'},
+    {'tc_name': 'tc1', 'input': {'name':'HSU'},    'output':'Hi'},    
+    {'tc_name': 'tc2', 'input': {'name':None},     'output':'Hi'},
+    {'tc_name': 'tc3', 'input': {'name':''},       'output':'Hi AI BTX'},  
 ]
 
 ketqua_list = []
