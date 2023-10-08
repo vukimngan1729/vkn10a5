@@ -15,4 +15,3 @@ hi('')             | Hi!
 
 def hi(name):
   return 'TODO'
-  

@@ -1,11 +1,4 @@
-#region load bailam + dapan method
 from s00_bailam import hi as bailam_f
-
-try:    from s01_dapan  import hi as dapan_f
-except: dapan_f=None  # if no dapan, just import it as None; we will take testcase's output to compare w/ :bailam
-
-#TODO name hi() as solution() so here we don't have to import hi specificly
-#endregion load bailam + dapan method
 
 
 #region chambai
@@ -21,14 +14,13 @@ testkey_list = [
 ketqua_list = []
 for tc in testkey_list:  # tc aka testcase
   INP_name = tc['input']
-  tc_score, o_DAPAN, o_BAILAM = \
-    chambai(tc, dapan_f, bailam_f)
+  tc_score, o_BAILAM = chambai(tc, bailam_f)
   
   ketqua_list.append({
-    'tc_name'  : tc['tc_name'],
-    'tc_score' : tc_score,  
-    'o_DAPAN'  : o_DAPAN,    
-    'o_BAILAM' : o_BAILAM,  
+    'tc_name'    : tc['tc_name'],
+    'tc_score'   : tc_score,  
+    'o_TESTCASE' : tc['output'],    
+    'o_BAILAM'   : o_BAILAM,  
   })
 #endregion chambai
 
@@ -37,8 +29,8 @@ print('---ketqua chitiet')
 for kq in ketqua_list:
   print(f'''
 {kq['tc_name']} {kq['tc_score']}
-o_DAPAN  = {kq['o_DAPAN']}
-o_BAILAM = {kq['o_DAPAN']}
+o_TESTCASE = {kq['o_TESTCASE']}
+o_BAILAM   = {kq['o_BAILAM']}
   '''.strip()+'\n')
 
 print('\n---ketqua')
