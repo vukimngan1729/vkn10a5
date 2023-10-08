@@ -1,10 +1,10 @@
 def chambai(testcase, dapan_f, bailam_f):
-  r_DAPAN = dapan_f(**testcase['input'])
+  o_DAPAN = dapan_f(**testcase['input'])  # aka output_DAPAN
 
   try:
-    r_THISINH = bailam_f(**testcase['input'])
+    o_BAILAM = bailam_f(**testcase['input'])  # aka input_DAPAN
   except:
-    r_THISINH = None
+    o_BAILAM = None
 
-  score01 = int(r_THISINH == r_DAPAN)
-  return score01
+  score01 = int(o_BAILAM == o_DAPAN)
+  return score01, o_DAPAN, o_BAILAM
