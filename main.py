@@ -1,14 +1,11 @@
-from s00_bailam import hi as bailam_f
+from s00_bailam import solution as bailam_f
 
 
 #region chambai
 from s02_chambai import chambai
 
 testkey_list = [
-    {'tc_name': 'tc0', 'input': {'name':'AI BTX'}, 'output':'Hi AI BTX'},  
-    {'tc_name': 'tc1', 'input': {'name':'HSU'},    'output':'Hi'},    
-    {'tc_name': 'tc2', 'input': {'name':None},     'output':'Hi'},
-    {'tc_name': 'tc3', 'input': {'name':''},       'output':'Hi AI BTX'},  
+  {'tc_name': 'tc0', 'input': {'i1':1, 'i2':22}, 'output':23},  
 ]
 
 ketqua_list = []
