@@ -4,9 +4,11 @@ from s00_bailam import solution as bailam_f
 #region chambai
 from s02_chambai import chambai
 
+#region testkey_list
 testcase_list = [
   {'tc_name': 'tc0', 'input': {'i1':1, 'i2':22}, 'output':23},  
 ]
+#endregion testkey_list
 
 ketqua_list = []
 for tc in testcase_list:  # tc aka testcase
