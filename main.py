@@ -4,12 +4,12 @@ from s00_bailam import solution as bailam_f
 #region chambai
 from s02_chambai import chambai
 
-testkey_list = [
+testcase_list = [
   {'tc_name': 'tc0', 'input': {'i1':1, 'i2':22}, 'output':23},  
 ]
 
 ketqua_list = []
-for tc in testkey_list:  # tc aka testcase
+for tc in testcase_list:  # tc aka testcase
   INP_name = tc['input']
   tc_score, o_BAILAM = chambai(tc, bailam_f)
   
