@@ -20,8 +20,3 @@ sumtwoint(None, None) | None
 def sumtwoint(i1, i2):
   return 'todo'
 #endregion bailam
-
-#TODO remove this complex requirement onstudentside
-#CHU Y khong xoa cac dong nay
-#          sumtwoint <-- hay thay bang ten ham cua ban o tren
-solution = sumtwoint
