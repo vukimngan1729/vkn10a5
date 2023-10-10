@@ -22,11 +22,21 @@ Khi chay voi input    | Ketqua output
 hi('Mom', 'f')        | Hi Ms Mom!
 hi('Dad', 'm')        | Hi Mr Dad!
 hi('AI-BTX', None)    | Hi AI-BTX!
-hi(None, None)        | Hi AI-BTX!
+hi(None, None)        | Hi!
 """
 #endregion debai
 
 #region bailam
-def sumtwoint(i1, i2):
-  return 'todo'
+def hi(name,gender):
+  if gender=='m':
+    return f'Hi Mr {name}!'
+  elif gender == "f":
+   return f"Hi Ms {name}!"
+  # elif gender == None:
+  #   return f'Hi {name}!'
+  elif name == None and gender == None :
+    return f"Hi!"
+  else:
+    return f'Hi {name}!'
+    
 #endregion bailam
