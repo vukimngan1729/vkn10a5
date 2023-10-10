@@ -1,4 +1,6 @@
-from s00_bailam import solution as bailam_f
+#region import bailam_f
+from s00_bailam import sumtwoint as bailam_f
+#endregion import bailam_f
 
 
 #region chambai
