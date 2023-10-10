@@ -26,7 +26,7 @@ for tc in testcase_list:  # tc aka testcase
   })
 #endregion chambai
 
-#region in ketquqa
+#region in ketqua
 print('---ketqua chitiet')
 for kq in ketqua_list:
   print(f'''
@@ -38,4 +38,4 @@ o_BAILAM   = {kq['o_BAILAM']}
 print('\n---ketqua')
 for kq in ketqua_list:
   print(f'''{kq['tc_name']} {kq['tc_score']}''')
-#endregion in ketquqa
+#endregion in ketqua
