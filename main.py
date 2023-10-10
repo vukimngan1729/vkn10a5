@@ -1,5 +1,5 @@
 #region import bailam_f
-from s00_bailam import sumtwoint as bailam_f
+from s00_bailam import hi as bailam_f
 #endregion import bailam_f
 
 #region chambai
@@ -7,10 +7,10 @@ from s02_chambai import chambai
 
 #region testkey_list
 testcase_list = [
-  {'tc_name': 'tc0', 'input': {'i1':1,    'i2':22},   'output':23},
-  {'tc_name': 'tc1', 'input': {'i1':1,    'i2':None}, 'output':None},
-  {'tc_name': 'tc0', 'input': {'i1':None, 'i2':22},   'output':None},
-  {'tc_name': 'tc0', 'input': {'i1':None, 'i2':None}, 'output':None},
+  {'tc_name': 'tc0', 'input': {'name':'Mom',    'gener':'f'},   'output':'Hi Ms Mom!'},
+  {'tc_name': 'tc1', 'input': {'name':'Dad',    'gener':'m'},   'output':'Hi Mr Dad!'},
+  {'tc_name': 'tc2', 'input': {'name':'AI-BTX', 'gener':None},  'output':'Hi AI-BTX!'},
+  {'tc_name': 'tc3', 'input': {'name':None,     'gener':None},  'output':'Hi!'},
 ]
 #endregion testkey_list
 
